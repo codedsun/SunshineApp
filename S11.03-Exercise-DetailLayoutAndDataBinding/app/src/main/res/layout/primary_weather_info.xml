@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Tomorrow, December 10"
+        app:layout_constraintBottom_toTopOf="@+id/textMinCurrent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageCondition"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/art_storm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate"
+        android:layout_marginLeft="52dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:text="LightSnow"
+        app:layout_constraintEnd_toEndOf="@+id/imageCondition"
+        app:layout_constraintStart_toStartOf="@+id/imageCondition"
+        app:layout_constraintTop_toBottomOf="@+id/imageCondition" />
+
+    <TextView
+        android:id="@+id/textMinCurrent"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="88dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="152dp"
+        android:gravity="center"
+        android:text="-1 C"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageCondition"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_marginLeft="152dp" />
+
+    <TextView
+        android:id="@+id/textTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textMinCurrent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="@+id/textMinCurrent"
+        app:layout_constraintTop_toBottomOf="@+id/textMinCurrent" />
+
+</android.support.constraint.ConstraintLayout>
